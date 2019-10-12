@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Falling emergency</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="NAVER_MAP_CLIENT_SECRET">X9pd8MAgAclQiGdQewRUgVJYqqKyKT1gx488UpXR</string>
+    <string name="default_notification_channel_id">1008</string>
+    <string name="NaverMapGeocodingURL">https://naveropenapi.apigw.ntruss.com/map-reversegeocode/v2/gc</string>
+</resources>

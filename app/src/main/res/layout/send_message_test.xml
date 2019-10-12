@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp" >
+
+    <TextView
+        android:id="@+id/textviewLogo"
+        android:layout_width="221dp"
+        android:layout_height="54dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:textSize="40sp"
+        android:text="메시지 전송" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_below="@+id/textviewLogo"
+        android:layout_marginBottom="20dp"
+        android:text="전송" />
+
+</RelativeLayout>

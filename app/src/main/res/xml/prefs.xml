@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="자동 측정">
+
+        <SwitchPreference
+            android:id="@+id/autoGPS"
+            android:defaultValue="false"
+            android:key="autoGPS"
+            android:switchTextOff="OFF"
+            android:switchTextOn="ON"
+            android:summary="지속적으로 내 위치를 검색하려면 ON"
+            android:title="GPS 검색"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
