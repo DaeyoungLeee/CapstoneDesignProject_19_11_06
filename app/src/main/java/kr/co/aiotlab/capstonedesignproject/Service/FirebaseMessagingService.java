@@ -7,7 +7,6 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.os.Build;
 import android.support.v4.app.NotificationCompat;
@@ -15,7 +14,7 @@ import android.util.Log;
 
 import com.google.firebase.messaging.RemoteMessage;
 
-import kr.co.aiotlab.capstonedesignproject.Main_Activity;
+import kr.co.aiotlab.capstonedesignproject.Activities.Main_Activity;
 import kr.co.aiotlab.capstonedesignproject.R;
 
 public class FirebaseMessagingService extends com.google.firebase.messaging.FirebaseMessagingService {

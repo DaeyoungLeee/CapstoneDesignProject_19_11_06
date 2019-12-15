@@ -3,6 +3,10 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="NAVER_MAP_CLIENT_SECRET">X9pd8MAgAclQiGdQewRUgVJYqqKyKT1gx488UpXR</string>
+    <string name="NAVER_MAP_CLIENT_ID">2k84cbiifl</string>
     <string name="default_notification_channel_id">1008</string>
     <string name="NaverMapGeocodingURL">https://naveropenapi.apigw.ntruss.com/map-reversegeocode/v2/gc</string>
+    <string name="kakao_app_key">e5b1c754a5cb59390534a2fc660266e0</string>
+    <string name="kakao_scheme">kakao + e5b1c754a5cb59390534a2fc660266e0</string>
+    <string name="kakaolink_host">kakaolink</string>
 </resources>

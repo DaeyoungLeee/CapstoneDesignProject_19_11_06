@@ -217,7 +217,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
-        android:background="@drawable/round_fill_brown"
+        android:background="@drawable/setting_round_fill_color"
         android:text="신고하기"
         android:textColor="#ffffff"
         android:textStyle="bold" />

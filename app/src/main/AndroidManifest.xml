@@ -3,19 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="kr.co.aiotlab.capstonedesignproject">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <!-- gps 위치정보 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <!--WIFI 상태활용시 추가--><uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <!--WIFI 상태활용시 추가--><uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <!--FCM 수신 시 화면 꺼짐 상태에서 동작 --><uses-permission android:name="android.permission.WAKE_LOCK" />
-    <!--FCM 수신 시 진동 --><uses-permission android:name="android.permission.VIBRATE"/>
-    <!--전화걸기--><uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!--WIFI 상태활용시 추가-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--WIFI 상태활용시 추가-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!--FCM 수신 시 화면 꺼짐 상태에서 동작 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--FCM 수신 시 진동 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--전화걸기-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--포그라운드 서비스 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <!-- 블루투스 -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -26,27 +36,29 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".Intro_Activity">
+        <activity android:name=".Activities.Intro_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
         </activity>
 
-        <activity android:name=".LogIn_Activity">
+        <activity android:name=".Activities.LogIn_Activity">
 
         </activity>
-        <activity android:name=".SignIn_Activity"/>
-        <activity android:name=".AlertFalling_Activity">
+        <activity android:name=".Activities.SignIn_Activity" />
+        <activity android:name=".Activities.AlertFalling_Activity">
             <intent-filter>
-                <action android:name="OPEN_ACTIVITY"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="OPEN_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main_Activity"/>
-        <activity android:name=".AddPersonList_Activity"/>
-        <activity android:name=".Bluetooth_Activity"/>
-        <activity android:name=".Settings_Activity"/>
+        <activity android:name=".Activities.Main_Activity" />
+        <activity android:name=".Activities.AddPersonList_Activity" />
+        <activity android:name=".Activities.BluetoothSelect_Activity" />
+        <activity android:name=".Activities.Settings_Activity" />
+        <activity android:name=".Activities.ChartViewPager_Activity"/>
 
         <!-- 네이버지도 사용하기 위한 클라이언트 ID 설정 -->
         <meta-data
@@ -56,6 +68,9 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="1008" />
+
+        <!-- 블루투스 서비스-->
+        <service android:name=".Service.BLuetoothService" />
 
         <!-- FCM 서비스 관련 -->
         <service
@@ -68,7 +83,7 @@
 
         <service android:name=".Service.FirebaseInstanceIDService">
             <intent-filter>
-                <action android:name="android.intent.action.INSTANCE_ID_EVENT"/>
+                <action android:name="android.intent.action.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 

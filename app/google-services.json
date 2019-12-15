@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1043396044919",
+    "firebase_url": "https://falling-emergency-project.firebaseio.com",
+    "project_id": "falling-emergency-project",
+    "storage_bucket": "falling-emergency-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043396044919:android:975909de2e38b463",
+        "android_client_info": {
+          "package_name": "kr.co.aiotlab.capstonedesignproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043396044919-guaor3ueo4kcdao4tsd21cdu82qflovi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.co.aiotlab.capstonedesignproject",
+            "certificate_hash": "75302d468c19f97529ed9e908966302f348ceae8"
+          }
+        },
+        {
+          "client_id": "1043396044919-ok3pgfrlbtsmsb39nk2jdo9lu6i72ged.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2Rig7wgmfMa5YSkO735DMiTELe9GkTNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043396044919-ok3pgfrlbtsmsb39nk2jdo9lu6i72ged.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
